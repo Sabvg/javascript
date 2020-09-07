@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciber</title>
+
+    <script>
+        // Exercici 1:
+
+        console.log('Hola mundo');
+
+
+        // Exercici 2:
+
+        alert('¡Me llamo Sabela!');
+
+
+        // Exercici 3:
+
+        var nom = 'Sabela';
+        var cognom = 'Vázquez';
+        console.log(nom + ' ' + cognom);
+
+
+        // Exercici 4:
+
+        var num1 = 22;
+        var num2 = 30;
+        console.log('La suma entre 22 y 30 es ' + parseInt(num1 + num2));
+
+
+        // Exercici 5:
+
+        var nota_examen = prompt('¿Qué nota has sacado?');
+
+        if (nota_examen >= 5 && nota_examen <= 10 && nota_examen >= 0) {
+            alert('Has aprobado el examen con un ' + nota_examen)
+        } else if (nota_examen <= 5 && nota_examen >= 0) {
+            alert('Ohh has suspendido el examen con un ' + nota_examen);
+        } else {
+            alert('Tienes que introducir una nota entre 0 y 10 y los decimales separados con .');
+        }
+
+
+        // Exercici 6:
+
+        var text = "Tinc un cotxe de color verd";
+        console.log(text);
+
+        var blau = text.replace("verd", "blau");
+        console.log(blau);
+
+        var lletres = text.replaceAll('o', 'u')
+        console.log(lletres);
+
+
+        // Exercici 7:
+
+        var objecte = ['taula', 'cadira', 'ordinador', 'libreta'];
+        for (i = 0; i < objecte.length; i++) {
+            console.log("L'objecte " + objecte[i] + " està a la posició " + i);
+        }
+
+
+        // Exercici 8:
+
+        function calculadora(operador, valor1, valor2) {
+
+            if (operador == 'suma') {
+                return valor1 + valor2;
+
+            } else if (operador == 'resta') {
+                return valor1 - valor2;
+
+            } else if (operador == 'multiplicacion') {
+                return valor1 * valor2;
+
+            } else {
+                alert('Operación no permitida');
+            }
+        }
+
+        var resultado = calculadora('suma', 40, 20);
+        alert('El resultado de la suma es ' + resultado);
+
+        var resultado = calculadora('resta', 40, 20);
+        alert('El resultado de la resta es ' + resultado);
+
+        var resultado = calculadora('multiplicacion', 40, 20);
+        alert('El resultado de la multiplicación es ' + resultado);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
