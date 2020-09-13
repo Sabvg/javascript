@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lletres repetides - Fase 4</title>
+</head>
+
+<script>
+    var nombre = [{
+        nom: 'S',
+
+    }, {
+        nom: 'A',
+
+    }, {
+        nom: 'B',
+
+    }, {
+        nom: 'E',
+
+    }, {
+        nom: 'L',
+
+    }, {
+        nom: 'A',
+
+    }];
+
+    var apellido = [{
+        cognom: 'V',
+
+    }, {
+        cognom: 'Á',
+
+    }, {
+        cognom: 'Z',
+
+    }, {
+        cognom: 'Q',
+
+    }, {
+        cognom: 'U',
+
+    }, {
+        cognom: 'E',
+
+    }, {
+        cognom: 'Z',
+
+    }];
+
+
+    var muestra_nombre = [];
+
+    var muestra_apellido = [];
+
+
+
+    for (var i = 0; i < nombre.length; i++) {
+        muestra_nombre.push(nombre[i].nom);
+    }
+
+
+    for (var i = 0; i < apellido.length; i++) {
+        muestra_apellido.push(apellido[i].cognom);
+    }
+
+    muestra_nombre.push(' ');
+
+    var full_name = muestra_nombre.concat(muestra_apellido);
+
+    console.log(full_name);
+</script>
+
+<body>
+
+</body>
+
+</html>

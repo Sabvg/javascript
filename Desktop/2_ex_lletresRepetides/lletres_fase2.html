@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lletres repetides - Fase 2</title>
+</head>
+
+<script>
+    miNom = ['S', 'A', '3', 'E', 'L', 'A'];
+
+    for (var i = 0; i < (miNom.length); i++) {
+
+        var caracter = miNom[i];
+
+        if (Number(caracter)) {
+            console.log('Els noms de persones no contenen el número: ' + caracter);
+
+        } else if (caracter.includes('A') || caracter.includes('E') || caracter.includes('I') || caracter.includes('O') || caracter.includes('U')) {
+            console.log('He trobat la VOCAL: ' + caracter);
+
+        } else {
+            console.log('He trobat la CONSONANT: ' + caracter);
+        }
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>

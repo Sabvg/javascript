@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lletres repetides - Fase 3</title>
+
+    <script>
+        function contarLetras(letras) {
+            var cadena = {};
+            for (var i in letras) {
+                cadena[letras[i]] = (cadena[letras[i]] || 0) + 1;
+            }
+            return cadena;
+        }
+
+        miNom = ['S', 'A', 'B', 'E', 'L', 'A'];
+
+        console.log(contarLetras(miNom));
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
