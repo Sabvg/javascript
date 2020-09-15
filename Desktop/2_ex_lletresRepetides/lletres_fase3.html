@@ -7,17 +7,35 @@
     <title>Lletres repetides - Fase 3</title>
 
     <script>
-        function contarLetras(letras) {
+       var miNom = ['S', 'A', 'B', 'E', 'L', 'A'];
+        var cuentaLetras = new Map();
+
+
+        function contarLetras() {
+            for (i = 0; i < miNom.length; i++) {
+                var caracter = miNom[i];
+
+                if (cuentaLetras.has(caracter)) {
+                    value = cuentaLetras.get(caracter);
+                    cuentaLetras.set(caracter, value + 1);
+                } else {
+                    cuentaLetras.set(caracter, 1);
+                }
+            }
+            return cuentaLetras;
+        }
+        console.log(contarLetras());
+
+
+        //otra forma de hacerlo
+        function contarLetras2(letras) {
             var cadena = {};
             for (var i in letras) {
                 cadena[letras[i]] = (cadena[letras[i]] || 0) + 1;
             }
             return cadena;
         }
-
-        miNom = ['S', 'A', 'B', 'E', 'L', 'A'];
-
-        console.log(contarLetras(miNom));
+        console.log(contarLetras2(miNom));
     </script>
 </head>
 
