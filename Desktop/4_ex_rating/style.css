@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cats {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fas {
+    font-size: 50px;
+    color: gray;
+}
+
+.fas:hover {
+    cursor: pointer;
+}
+
+.color {
+    color: orangered;
+}
+
+i:hover::before,
+i:hover~i::before {
+    color: orange;
+}
